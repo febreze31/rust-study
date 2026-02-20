@@ -1,3 +1,14 @@
+mod ownership;
+mod borrow;
+
 fn main() {
-    println!("Crypto Infra Journey Day1!");
+	println!("--- Ownership Example ---");
+	ownership::run();
+
+	println!("--- Borrow Example ---");
+	borrow::run();
+
+	println!("--- Mutable Borrow Example ---");
+	borrow::run_mutable();
+
 }
